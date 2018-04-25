@@ -1,0 +1,11 @@
+mvn com.oracle.maven:oracle-maven-sync:push -Doracle-maven-sync.oracleHome=C:\\ORACLE\\Middleware12c\\Oracle_Home\\
+
+mvn archetype:crawl -Dcatalog=C:\\Users\\asinha\\.m2\\archetype-catalog.xml
+
+
+<!-- https://mvnrepository.com/artifact/com.github.redfish4ktc.soapui/maven-soapui-extension-plugin -->
+<dependency>
+    <groupId>com.github.redfish4ktc.soapui</groupId>
+    <artifactId>maven-soapui-extension-plugin</artifactId>
+    <version>4.6.4.2</version>
+</dependency>
