@@ -1,3 +1,5 @@
+## Vagrant Cheat Sheet
+
 #Create new project: (Base Box)
 
     vagrant init precise64 http://files.vagrantup.com/precise64.box
@@ -9,7 +11,7 @@
 #Add a new box and if existing override
 
     vagrant box add precise64 http://files.vagrantup.com/precise64.box --force
-    
+
 #List boxes
 
     vagrant box list
