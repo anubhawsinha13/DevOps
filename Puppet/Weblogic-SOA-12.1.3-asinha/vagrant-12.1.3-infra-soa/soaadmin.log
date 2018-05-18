@@ -1,0 +1,482 @@
+vagrant up soadb
+==> vagrant: A new version of Vagrant is available: 2.1.1!
+==> vagrant: To upgrade visit: https://www.vagrantup.com/downloads.html
+
+Bringing machine 'soadb' up with 'virtualbox' provider...
+==> soadb: Importing base box 'centos-6.6-x86_64'...
+==> soadb: Matching MAC address for NAT networking...
+==> soadb: Setting the name of the VM:orawls-vagrant-1213-infra-soa_soadb_1526575951330_53163
+==> soadb: Clearing any previously set network interfaces...
+==> soadb: Preparing network interfaces based on configuration...
+    soadb: Adapter 1: nat
+    soadb: Adapter 2: hostonly
+==> soadb: Forwarding ports...
+    soadb: 22 (guest) => 2222 (host) (adapter 1)
+==> soadb: Running 'pre-boot' VM customizations...
+==> soadb: Booting VM...
+==> soadb: Waiting for machine to boot. This may take a few minutes...
+    soadb: SSH address: 127.0.0.1:2222
+    soadb: SSH username: vagrant
+    soadb: SSH auth method: private key
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+    soadb:
+    soadb: Vagrant insecure key detected. Vagrant will automatically replace
+    soadb: this with a newly generated keypair for better security.
+    soadb:
+    soadb: Inserting generated public key within guest...
+    soadb: Removing insecure key from the guest if it's present...
+    soadb: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> soadb: Machine booted and ready!
+[soadb] GuestAdditions versions on your host (5.2.8) and guest (4.3.20) do not match.
+Loaded plugins: fastestmirror, security
+Setting up Install Process
+Determining fastest mirrors
+ * base: reflector.westga.edu
+ * extras: mirror.nodesdirect.com
+ * updates: mirror.redsox.cc
+Package bzip2-1.0.5-7.el6_0.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package binutils.x86_64 0:2.20.51.0.2-5.42.el6 will be updated
+---> Package binutils.x86_64 0:2.20.51.0.2-5.47.el6_9.1 will be an update
+---> Package gcc.x86_64 0:4.4.7-11.el6 will be updated
+--> Processing Dependency: gcc = 4.4.7-11.el6 for package: gcc-c++-4.4.7-11.el6.x86_64
+--> Processing Dependency: gcc = 4.4.7-11.el6 for package: gcc-gfortran-4.4.7-11.el6.x86_64
+---> Package gcc.x86_64 0:4.4.7-18.el6_9.2 will be an update
+--> Processing Dependency: libgomp = 4.4.7-18.el6_9.2 for package: gcc-4.4.7-18.el6_9.2.x86_64
+--> Processing Dependency: cpp = 4.4.7-18.el6_9.2 for package: gcc-4.4.7-18.el6_9.2.x86_64
+--> Processing Dependency: libgcc >= 4.4.7-18.el6_9.2 for package: gcc-4.4.7-18.el6_9.2.x86_64
+---> Package make.x86_64 1:3.81-20.el6 will be updated
+---> Package make.x86_64 1:3.81-23.el6 will be an update
+---> Package perl.x86_64 4:5.10.1-136.el6_6.1 will be updated
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: 1:perl-Module-Pluggable-3.90-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: perl-Compress-Zlib-2.021-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: perl-IO-Compress-Base-2.021-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: 3:perl-version-0.77-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: 1:perl-Pod-Escapes-1.04-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: perl-IO-Compress-Zlib-2.021-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: 1:perl-Pod-Simple-3.13-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: 1:perl-Compress-Raw-Zlib-2.021-136.el6_6.1.x86_64
+--> Processing Dependency: perl = 4:5.10.1-136.el6_6.1 for package: 4:perl-libs-5.10.1-136.el6_6.1.x86_64
+---> Package perl.x86_64 4:5.10.1-144.el6 will be an update
+--> Running transaction check
+---> Package cpp.x86_64 0:4.4.7-11.el6 will be updated
+---> Package cpp.x86_64 0:4.4.7-18.el6_9.2 will be an update
+---> Package gcc-c++.x86_64 0:4.4.7-11.el6 will be updated
+---> Package gcc-c++.x86_64 0:4.4.7-18.el6_9.2 will be an update
+--> Processing Dependency: libstdc++-devel = 4.4.7-18.el6_9.2 for package: gcc-c++-4.4.7-18.el6_9.2.x86_64
+--> Processing Dependency: libstdc++ = 4.4.7-18.el6_9.2 for package: gcc-c++-4.4.7-18.el6_9.2.x86_64
+---> Package gcc-gfortran.x86_64 0:4.4.7-11.el6 will be updated
+---> Package gcc-gfortran.x86_64 0:4.4.7-18.el6_9.2 will be an update
+--> Processing Dependency: libgfortran = 4.4.7-18.el6_9.2 for package: gcc-gfortran-4.4.7-18.el6_9.2.x86_64
+---> Package libgcc.x86_64 0:4.4.7-11.el6 will be updated
+---> Package libgcc.x86_64 0:4.4.7-18.el6_9.2 will be an update
+---> Package libgomp.x86_64 0:4.4.7-11.el6 will be updated
+---> Package libgomp.x86_64 0:4.4.7-18.el6_9.2 will be an update
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.021-136.el6_6.1 will be updated
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.021-144.el6 will be an update
+---> Package perl-Compress-Zlib.x86_64 0:2.021-136.el6_6.1 will be updated
+---> Package perl-Compress-Zlib.x86_64 0:2.021-144.el6 will be an update
+---> Package perl-IO-Compress-Base.x86_64 0:2.021-136.el6_6.1 will be updated
+---> Package perl-IO-Compress-Base.x86_64 0:2.021-144.el6 will be an update
+---> Package perl-IO-Compress-Zlib.x86_64 0:2.021-136.el6_6.1 will be updated
+---> Package perl-IO-Compress-Zlib.x86_64 0:2.021-144.el6 will be an update
+---> Package perl-Module-Pluggable.x86_64 1:3.90-136.el6_6.1 will be updated
+---> Package perl-Module-Pluggable.x86_64 1:3.90-144.el6 will be an update
+---> Package perl-Pod-Escapes.x86_64 1:1.04-136.el6_6.1 will be updated
+---> Package perl-Pod-Escapes.x86_64 1:1.04-144.el6 will be an update
+---> Package perl-Pod-Simple.x86_64 1:3.13-136.el6_6.1 will be updated
+---> Package perl-Pod-Simple.x86_64 1:3.13-144.el6 will be an update
+---> Package perl-libs.x86_64 4:5.10.1-136.el6_6.1 will be updated
+---> Package perl-libs.x86_64 4:5.10.1-144.el6 will be an update
+---> Package perl-version.x86_64 3:0.77-136.el6_6.1 will be updated
+---> Package perl-version.x86_64 3:0.77-144.el6 will be an update
+--> Running transaction check
+---> Package libgfortran.x86_64 0:4.4.7-11.el6 will be updated
+---> Package libgfortran.x86_64 0:4.4.7-18.el6_9.2 will be an update
+---> Package libstdc++.x86_64 0:4.4.7-11.el6 will be updated
+---> Package libstdc++.x86_64 0:4.4.7-18.el6_9.2 will be an update
+---> Package libstdc++-devel.x86_64 0:4.4.7-11.el6 will be updated
+---> Package libstdc++-devel.x86_64 0:4.4.7-18.el6_9.2 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                  Arch     Version                      Repository
+                                                                           Size
+================================================================================
+Updating:
+ binutils                 x86_64   2.20.51.0.2-5.47.el6_9.1     updates   2.8 M
+ gcc                      x86_64   4.4.7-18.el6_9.2             updates    10 M
+ make                     x86_64   1:3.81-23.el6                base      389 k
+ perl                     x86_64   4:5.10.1-144.el6             base       10 M
+Updating for dependencies:
+ cpp                      x86_64   4.4.7-18.el6_9.2             updates   3.7 M
+ gcc-c++                  x86_64   4.4.7-18.el6_9.2             updates   4.7 M
+ gcc-gfortran             x86_64   4.4.7-18.el6_9.2             updates   4.7 M
+ libgcc                   x86_64   4.4.7-18.el6_9.2             updates   103 k
+ libgfortran              x86_64   4.4.7-18.el6_9.2             updates   268 k
+ libgomp                  x86_64   4.4.7-18.el6_9.2             updates   134 k
+ libstdc++                x86_64   4.4.7-18.el6_9.2             updates   296 k
+ libstdc++-devel          x86_64   4.4.7-18.el6_9.2             updates   1.6 M
+ perl-Compress-Raw-Zlib   x86_64   1:2.021-144.el6              base       70 k
+ perl-Compress-Zlib       x86_64   2.021-144.el6                base       46 k
+ perl-IO-Compress-Base    x86_64   2.021-144.el6                base       70 k
+ perl-IO-Compress-Zlib    x86_64   2.021-144.el6                base      136 k
+ perl-Module-Pluggable    x86_64   1:3.90-144.el6               base       41 k
+ perl-Pod-Escapes         x86_64   1:1.04-144.el6               base       33 k
+ perl-Pod-Simple          x86_64   1:3.13-144.el6               base      213 k
+ perl-libs                x86_64   4:5.10.1-144.el6             base      579 k
+ perl-version             x86_64   3:0.77-144.el6               base       52 k
+
+Transaction Summary
+================================================================================
+Upgrade      21 Package(s)
+
+Total download size: 40 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                           5.3 MB/s |  40 MB     00:07
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Updating   : 1:perl-Pod-Escapes-1.04-144.el6.x86_64                      1/42
+  Updating   : 4:perl-libs-5.10.1-144.el6.x86_64                           2/42
+  Updating   : 1:perl-Pod-Simple-3.13-144.el6.x86_64                       3/42
+  Updating   : 1:perl-Module-Pluggable-3.90-144.el6.x86_64                 4/42
+  Updating   : 3:perl-version-0.77-144.el6.x86_64                          5/42
+  Updating   : 4:perl-5.10.1-144.el6.x86_64                                6/42
+  Updating   : 1:perl-Compress-Raw-Zlib-2.021-144.el6.x86_64               7/42
+  Updating   : perl-IO-Compress-Base-2.021-144.el6.x86_64                  8/42
+  Updating   : libgcc-4.4.7-18.el6_9.2.x86_64                              9/42
+  Updating   : libstdc++-4.4.7-18.el6_9.2.x86_64                          10/42
+  Updating   : libstdc++-devel-4.4.7-18.el6_9.2.x86_64                    11/42
+  Updating   : perl-IO-Compress-Zlib-2.021-144.el6.x86_64                 12/42
+  Updating   : cpp-4.4.7-18.el6_9.2.x86_64                                13/42
+  Updating   : libgfortran-4.4.7-18.el6_9.2.x86_64                        14/42
+  Updating   : libgomp-4.4.7-18.el6_9.2.x86_64                            15/42
+  Updating   : binutils-2.20.51.0.2-5.47.el6_9.1.x86_64                   16/42
+  Updating   : gcc-4.4.7-18.el6_9.2.x86_64                                17/42
+  Updating   : gcc-c++-4.4.7-18.el6_9.2.x86_64                            18/42
+  Updating   : gcc-gfortran-4.4.7-18.el6_9.2.x86_64                       19/42
+  Updating   : perl-Compress-Zlib-2.021-144.el6.x86_64                    20/42
+  Updating   : 1:make-3.81-23.el6.x86_64                                  21/42
+  Cleanup    : perl-Compress-Zlib-2.021-136.el6_6.1.x86_64                22/42
+  Cleanup    : perl-IO-Compress-Zlib-2.021-136.el6_6.1.x86_64             23/42
+  Cleanup    : gcc-c++-4.4.7-11.el6.x86_64                                24/42
+  Cleanup    : gcc-gfortran-4.4.7-11.el6.x86_64                           25/42
+  Cleanup    : libstdc++-devel-4.4.7-11.el6.x86_64                        26/42
+  Cleanup    : perl-IO-Compress-Base-2.021-136.el6_6.1.x86_64             27/42
+  Cleanup    : gcc-4.4.7-11.el6.x86_64                                    28/42
+  Cleanup    : libstdc++-4.4.7-11.el6.x86_64                              29/42
+  Cleanup    : 1:perl-Compress-Raw-Zlib-2.021-136.el6_6.1.x86_64          30/42
+  Cleanup    : 1:perl-Module-Pluggable-3.90-136.el6_6.1.x86_64            31/42
+  Cleanup    : 1:perl-Pod-Escapes-1.04-136.el6_6.1.x86_64                 32/42
+  Cleanup    : 1:perl-Pod-Simple-3.13-136.el6_6.1.x86_64                  33/42
+  Cleanup    : 3:perl-version-0.77-136.el6_6.1.x86_64                     34/42
+  Cleanup    : 4:perl-libs-5.10.1-136.el6_6.1.x86_64                      35/42
+  Cleanup    : 4:perl-5.10.1-136.el6_6.1.x86_64                           36/42
+  Cleanup    : libgcc-4.4.7-11.el6.x86_64                                 37/42
+  Cleanup    : binutils-2.20.51.0.2-5.42.el6.x86_64                       38/42
+  Cleanup    : cpp-4.4.7-11.el6.x86_64                                    39/42
+  Cleanup    : libgomp-4.4.7-11.el6.x86_64                                40/42
+  Cleanup    : libgfortran-4.4.7-11.el6.x86_64                            41/42
+  Cleanup    : 1:make-3.81-20.el6.x86_64                                  42/42
+  Verifying  : binutils-2.20.51.0.2-5.47.el6_9.1.x86_64                    1/42
+  Verifying  : libgomp-4.4.7-18.el6_9.2.x86_64                             2/42
+  Verifying  : perl-Compress-Zlib-2.021-144.el6.x86_64                     3/42
+  Verifying  : 4:perl-5.10.1-144.el6.x86_64                                4/42
+  Verifying  : gcc-c++-4.4.7-18.el6_9.2.x86_64                             5/42
+  Verifying  : gcc-gfortran-4.4.7-18.el6_9.2.x86_64                        6/42
+  Verifying  : 4:perl-libs-5.10.1-144.el6.x86_64                           7/42
+  Verifying  : libgfortran-4.4.7-18.el6_9.2.x86_64                         8/42
+  Verifying  : 1:perl-Pod-Simple-3.13-144.el6.x86_64                       9/42
+  Verifying  : 1:perl-Pod-Escapes-1.04-144.el6.x86_64                     10/42
+  Verifying  : libgcc-4.4.7-18.el6_9.2.x86_64                             11/42
+  Verifying  : 1:make-3.81-23.el6.x86_64                                  12/42
+  Verifying  : gcc-4.4.7-18.el6_9.2.x86_64                                13/42
+  Verifying  : 1:perl-Compress-Raw-Zlib-2.021-144.el6.x86_64              14/42
+  Verifying  : libstdc++-4.4.7-18.el6_9.2.x86_64                          15/42
+  Verifying  : perl-IO-Compress-Base-2.021-144.el6.x86_64                 16/42
+  Verifying  : libstdc++-devel-4.4.7-18.el6_9.2.x86_64                    17/42
+  Verifying  : 1:perl-Module-Pluggable-3.90-144.el6.x86_64                18/42
+  Verifying  : cpp-4.4.7-18.el6_9.2.x86_64                                19/42
+  Verifying  : perl-IO-Compress-Zlib-2.021-144.el6.x86_64                 20/42
+  Verifying  : 3:perl-version-0.77-144.el6.x86_64                         21/42
+  Verifying  : libstdc++-4.4.7-11.el6.x86_64                              22/42
+  Verifying  : libgcc-4.4.7-11.el6.x86_64                                 23/42
+  Verifying  : libstdc++-devel-4.4.7-11.el6.x86_64                        24/42
+  Verifying  : 1:perl-Pod-Escapes-1.04-136.el6_6.1.x86_64                 25/42
+  Verifying  : 3:perl-version-0.77-136.el6_6.1.x86_64                     26/42
+  Verifying  : perl-IO-Compress-Base-2.021-136.el6_6.1.x86_64             27/42
+  Verifying  : libgomp-4.4.7-11.el6.x86_64                                28/42
+  Verifying  : binutils-2.20.51.0.2-5.42.el6.x86_64                       29/42
+  Verifying  : 1:make-3.81-20.el6.x86_64                                  30/42
+  Verifying  : 4:perl-libs-5.10.1-136.el6_6.1.x86_64                      31/42
+  Verifying  : gcc-c++-4.4.7-11.el6.x86_64                                32/42
+  Verifying  : 1:perl-Module-Pluggable-3.90-136.el6_6.1.x86_64            33/42
+  Verifying  : 4:perl-5.10.1-136.el6_6.1.x86_64                           34/42
+  Verifying  : perl-Compress-Zlib-2.021-136.el6_6.1.x86_64                35/42
+  Verifying  : 1:perl-Compress-Raw-Zlib-2.021-136.el6_6.1.x86_64          36/42
+  Verifying  : gcc-4.4.7-11.el6.x86_64                                    37/42
+  Verifying  : libgfortran-4.4.7-11.el6.x86_64                            38/42
+  Verifying  : 1:perl-Pod-Simple-3.13-136.el6_6.1.x86_64                  39/42
+  Verifying  : perl-IO-Compress-Zlib-2.021-136.el6_6.1.x86_64             40/42
+  Verifying  : cpp-4.4.7-11.el6.x86_64                                    41/42
+  Verifying  : gcc-gfortran-4.4.7-11.el6.x86_64                           42/42
+
+Updated:
+  binutils.x86_64 0:2.20.51.0.2-5.47.el6_9.1    gcc.x86_64 0:4.4.7-18.el6_9.2
+  make.x86_64 1:3.81-23.el6                     perl.x86_64 4:5.10.1-144.el6
+
+Dependency Updated:
+  cpp.x86_64 0:4.4.7-18.el6_9.2
+  gcc-c++.x86_64 0:4.4.7-18.el6_9.2
+  gcc-gfortran.x86_64 0:4.4.7-18.el6_9.2
+  libgcc.x86_64 0:4.4.7-18.el6_9.2
+  libgfortran.x86_64 0:4.4.7-18.el6_9.2
+  libgomp.x86_64 0:4.4.7-18.el6_9.2
+  libstdc++.x86_64 0:4.4.7-18.el6_9.2
+  libstdc++-devel.x86_64 0:4.4.7-18.el6_9.2
+  perl-Compress-Raw-Zlib.x86_64 1:2.021-144.el6
+  perl-Compress-Zlib.x86_64 0:2.021-144.el6
+  perl-IO-Compress-Base.x86_64 0:2.021-144.el6
+  perl-IO-Compress-Zlib.x86_64 0:2.021-144.el6
+  perl-Module-Pluggable.x86_64 1:3.90-144.el6
+  perl-Pod-Escapes.x86_64 1:1.04-144.el6
+  perl-Pod-Simple.x86_64 1:3.13-144.el6
+  perl-libs.x86_64 4:5.10.1-144.el6
+  perl-version.x86_64 3:0.77-144.el6
+
+Complete!
+Copy iso file /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso into the box /tmp/VBoxGuestAdditions.iso
+Mounting Virtualbox Guest Additions ISO to: /mnt
+Installing Virtualbox Guest Additions 5.2.8 - guest version is 4.3.20
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 5.2.8 Guest Additions for Linux........
+VirtualBox Guest Additions installer
+Removing installed version 4.3.20 of VirtualBox Guest Additions...
+Copying additional installer modules ...
+Installing additional modules ...
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel modules.
+VirtualBox Guest Additions: Running kernel modules will not be replaced until the system is restarted
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: modprobe vboxsf failed
+An error occurred during installation of VirtualBox Guest Additions 5.2.8. Some functionality may not work as intended.
+In most cases it is OK that the "Window System drivers" installation failed.
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: modprobe vboxsf failed
+/etc/init.d/vboxadd: line 256: : No such file or directory
+Unmounting Virtualbox Guest Additions ISO from: /mnt
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   4.3.20
+VBoxService inside the vm claims: 5.2.8
+Going on, assuming VBoxService is correct...
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   4.3.20
+VBoxService inside the vm claims: 5.2.8
+Going on, assuming VBoxService is correct...
+Got different reports about installed GuestAdditions version:
+Virtualbox on your host claims:   4.3.20
+VBoxService inside the vm claims: 5.2.8
+Going on, assuming VBoxService is correct...
+Restarting VM to apply changes...
+==> soadb: Attempting graceful shutdown of VM...
+==> soadb: Booting VM...
+==> soadb: Waiting for machine to boot. This may take a few minutes...
+    soadb: SSH address: 127.0.0.1:2222
+    soadb: SSH username: vagrant
+    soadb: SSH auth method: private key
+    soadb: Warning: Connection reset. Retrying...
+    soadb: Warning: Remote connection disconnect. Retrying...
+    soadb: Warning: Connection reset. Retrying...
+==> soadb: Machine booted and ready!
+==> soadb: Checking for guest additions in VM...
+==> soadb: Setting hostname...
+==> soadb: Configuring and enabling network interfaces...
+    soadb: SSH address: 127.0.0.1:2222
+    soadb: SSH username: vagrant
+    soadb: SSH auth method: private key
+==> soadb: Mounting shared folders...
+    soadb: /vagrant => orawls-vagrant-12.1.3-infra-soa
+    soadb: /software =>
+    soadb: /tmp/vagrant-puppet/modules-b0c0a837b46bc96f30d23e589c13e075 => orawls-vagrant-12.1.3-infra-soa/puppet/modules
+    soadb: /tmp/vagrant-puppet/manifests-846018e2aa141a5eb79a64b4015fc5f3 => orawls-vagrant-12.1.3-infra-soa/puppet/manifests
+==> soadb: Running provisioner: shell...
+    soadb: Running: inline script
+==> soadb: Running provisioner: puppet...
+==> soadb: Running Puppet with db.pp...
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: Loading facts
+==> soadb: Info: oracle_exists: oracle_exists NotFound
+==> soadb: Info: oracle_exists: oracle_exists return empty -> false
+==> soadb: Notice: Compiled catalog for soadb.example.com in environment production in 4.29 seconds
+==> soadb: Info: Applying configuration version '1526576099'
+==> soadb: Notice: /Stage[main]/Oradb::Prepareautostart/File[/etc/init.d/dbora]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_fin_timeout]/value: value changed '60' to '30'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_fin_timeout]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Service[iptables]/enable: enable changed 'true' to 'false'
+==> soadb: Notice: /Stage[main]/Oradb_os/Group[dba]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Host[mft1admin.example.com]/ensure: created
+==> soadb: Info: Computing checksum on file /etc/hosts
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[fs.file-max]/value: value changed '238188' to '6815744'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[fs.file-max]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Package[unixODBC-devel]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Group[oinstall]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Package[compat-libcap1.x86_64]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[kernel.shmmni]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.rmem_default]/value: value changed '124928' to '262144'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.rmem_default]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Package[glibc.i686]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[kernel.shmall]/value: value changed '4294967296' to '2097152'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_keepalive_intvl]/value: value changed '75' to '30'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_keepalive_intvl]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.wmem_max]/value: value changed '124928' to '1048576'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.wmem_max]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Host[soa2node2.example.com]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Package[libaio-devel.x86_64]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.wmem_default]/value: value changed '124928' to '262144'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.wmem_default]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Group[oper]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/User[oracle]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[kernel.sem]/value: value changed '250 32000 32 128' to '250 32000 100 128'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[kernel.sem]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[*]/Limits::Set[*-nofile]/Limits::Entry[*-soft-nofile]/Augeas[limits_conf/*/soft/nofile]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[*]/Limits::Set[*-nofile]/Limits::Entry[*-hard-nofile]/Augeas[limits_conf/*/hard/nofile]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb::Prepareautostart/Exec[chkconfig dbora]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[kernel.shmmax]/value: value changed '68719476736' to '2588483584'
+==> soadb: Notice: /Stage[main]/Oradb_os/Host[soadb.example.com]/ip: ip changed '127.0.0.1' to '10.10.10.5'
+==> soadb: Notice: /Stage[main]/Oradb_os/Host[soa2admin2.example.com]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Package[ksh.x86_64]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_keepalive_time]/value: value changed '7200' to '1800'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_keepalive_time]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_keepalive_probes]/value: value changed '9' to '5'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.tcp_keepalive_probes]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[oracle]/Limits::Set[oracle-nofile]/Limits::Entry[oracle-soft-nofile]/Augeas[limits_conf/oracle/soft/nofile]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[oracle]/Limits::Set[oracle-nofile]/Limits::Entry[oracle-hard-nofile]/Augeas[limits_conf/oracle/hard/nofile]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_os/Host[localhost]/ip: ip changed '::1' to '127.0.0.1'
+==> soadb: Notice: /Stage[main]/Oradb_os/Host[localhost]/host_aliases: host_aliases changed 'localhost.localdomain localhost6 localhost6.localdomain6' to 'localhost.localdomain,localhost4,localhost4.localdomain4'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[fs.aio-max-nr]/value: value changed '65536' to '1048576'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[fs.aio-max-nr]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Oradb_os/Package[compat-libstdc++-33.x86_64]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.rmem_max]/value: value changed '124928' to '4194304'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.core.rmem_max]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[oracle]/Limits::Set[oracle-nproc]/Limits::Entry[oracle-soft-nproc]/Augeas[limits_conf/oracle/soft/nproc]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[oracle]/Limits::Set[oracle-nproc]/Limits::Entry[oracle-hard-nproc]/Augeas[limits_conf/oracle/hard/nproc]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Swap_file/Exec[Create swap file]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Swap_file/Exec[Attach swap file]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Swap_file/Mount[swap]/device: device changed 'UUID=949537dc-64b8-49ef-9268-f4b829037224' to '/var/swap.1'
+==> soadb: Info: Computing checksum on file /etc/fstab
+==> soadb: Info: /Stage[main]/Swap_file/Mount[swap]: Scheduling refresh of Mount[swap]
+==> soadb: Notice: /Stage[main]/Swap_file/Mount[swap]: Triggered 'refresh' from 1 events
+==> soadb: Info: /Stage[main]/Swap_file/Mount[swap]: Scheduling refresh of Mount[swap]
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.ip_local_port_range]/value: value changed '32768 61000' to '9000 65500'
+==> soadb: Notice: /Stage[main]/Oradb_os/Sysctl[net.ipv4.ip_local_port_range]/permanent: permanent changed 'no' to 'yes'
+==> soadb: Notice: /Stage[main]/Limits/Limits::Domain[oracle]/Limits::Set[oracle-stack]/Limits::Entry[oracle-soft-stack]/Augeas[limits_conf/oracle/soft/stack]/returns: executed successfully
+==> soadb: Notice: oradb::installdb /oracle/product/12.1/db does not exists
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Notify[oradb::installdb /oracle/product/12.1/db does not exists]/message: defined 'message' as 'oradb::installdb /oracle/product/12.1/db does not exists'
+==> soadb: Notice: create_user parameter on installdb 12.1_linux-x64 can be removed, create_user feature is removed from this oradb module
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Notify[create_user parameter on installdb 12.1_linux-x64 can be removed, create_user feature is removed from this oradb module]/message: defined 'message' as 'create_user parameter on installdb 12.1_linux-x64 can be removed, create_user feature is removed from this oradb module'
+==> soadb: Info: configure oracle folders for oracle structure 12.1.0.2
+==> soadb: Info: create the following directories: /oracle, /oracle/oraInventory, /var/tmp/install
+==> soadb: Info: creating directory /oracle
+==> soadb: Info: Setting oracle ownership for /oracle with 0775
+==> soadb: Info: creating directory /oracle/oraInventory
+==> soadb: Info: Setting oracle ownership for /oracle/oraInventory with 0775
+==> soadb: Info: creating directory /var/tmp/install
+==> soadb: Info: Setting public permissions 0777 for /var/tmp/install
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Db_directory_structure[oracle structure 12.1.0.2]/ensure: defined 'ensure' as 'present'
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[extract /var/tmp/install/linuxamd64_12102_database_se2_1of2.zip]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[extract /var/tmp/install/linuxamd64_12102_database_se2_2of2.zip]/returns: executed successfully
+==> soadb: Info: Computing checksum on file /home/oracle/.bash_profile
+==> soadb: Info: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/File[/home/oracle/.bash_profile]: Filebucketed /home/oracle/.bash_profile to puppet with sum 3e8337f44f84b298a8a99869ae8ca76a
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/File[/home/oracle/.bash_profile]/content: content changed '{md5}3e8337f44f84b298a8a99869ae8ca76a' to '{md5}7bad27498c0bf55b5697ef451ceb4484'
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/File[/home/oracle/.bash_profile]/group: group changed 'oinstall' to 'dba'
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/File[/home/oracle/.bash_profile]/mode: mode changed '0644' to '0775'
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Oradb::Utils::Dborainst[database orainst 12.1.0.2]/File[/etc/oraInst.loc]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/File[/var/tmp/install/db_install_12.1.0.2.rsp]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: Starting Oracle Universal Installer...
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: Checking Temp space: must be greater than 500 MB.   Actual 61019 MB    Passed
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: Checking swap space: must be greater than 150 MB.   Actual 10191 MB    Passed
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: Preparing to launch Oracle Universal Installer from /tmp/OraInstall2018-05-17_06-57-38PM. Please wait ...You can find the log of this install session at:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns:  /oracle/oraInventory/logs/installActions2018-05-17_06-57-38PM.log
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: The installation of Oracle Database 12c was successful.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: Please check '/oracle/oraInventory/logs/silentInstall2018-05-17_06-57-38PM.log' for more details.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: As a root user, execute the following script(s):
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: 	1. /oracle/product/12.1/db/root.sh
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: Successfully Setup Software.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[install oracle database 12.1_linux-x64]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[run root.sh script 12.1_linux-x64]/returns: Check /oracle/product/12.1/db/install/root_soadb.example.com_2018-05-17_19-01-10.log for the output of root script
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[run root.sh script 12.1_linux-x64]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/File[/oracle/product/12.1/db]/mode: mode changed '0755' to '0775'
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Installdb[12.1_linux-x64]/Exec[remove oracle db extract folder 12.1_linux-x64]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/File[/var/tmp/install/netca_12.1.rsp]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Parsing command line arguments:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:     Parameter "silent" = true
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:     Parameter "responsefile" = /var/tmp/install/netca_12.1.rsp
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Done parsing command line arguments.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Oracle Net Services Configuration:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Configuring Listener:LISTENER
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Listener configuration complete.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Oracle Net Listener Startup:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:     Running Listener Control:
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:       /oracle/product/12.1/db/bin/lsnrctl start LISTENER
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:     Listener Control complete.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns:     Listener started successfully.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Profile configuration complete.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: Oracle Net Services configuration successful. The exit code is 0
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Net[config net8]/Exec[install oracle net config net8]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/File[/var/tmp/install/database_oraDb.rsp]/ensure: created
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: Copying database files
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 1% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 3% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 11% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 18% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 26% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 37% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: Creating and starting Oracle instance
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 40% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 45% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 50% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 55% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 56% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 60% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 62% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: Completing Database Creation
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 66% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 70% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 73% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 85% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 96% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: 100% complete
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: Look at the log file "/oracle/cfgtoollogs/dbca/soarepos/soarepos.log" for further details.
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Database[oraDb]/Exec[oracle database oraDb]/returns: executed successfully
+==> soadb: Notice: /Stage[main]/Oradb_12c/Oradb::Autostartdatabase[autostart oracle]/Exec[set dbora soarepos:/oracle/product/12.1/db]/returns: executed successfully
+==> soadb: Info: Creating state file /var/lib/puppet/state/state.yaml
+==> soadb: Notice: Finished catalog run in 944.33 seconds
