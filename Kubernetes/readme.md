@@ -6,4 +6,4 @@
 
 4) Add User named kops so that kops can deploy Kubernetes
 
-![alt text] (https://github.com/anubhawsinha13/images/blob/master/AWS.IAM.Users.png)
+![alt text](https://github.com/anubhawsinha13/images/blob/master/AWS.IAM.Users.png)
