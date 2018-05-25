@@ -5,3 +5,5 @@ Repository to update the notes towrds the leaning journy of all the new technolo
 2) Puppet/Chef
 3) Dockers (Currently a different repository in GIT Hub
 4) Jenkins ( Currently based in the Docker Image which comes with Jenkins already installed).
+5) Ansible for weblogic provisioning
+6) 
