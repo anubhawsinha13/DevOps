@@ -1,4 +1,4 @@
-# weblogic-ansible
+### Ansible with Weblogic
 
 An Ansible Playbook (weblogic-fmw-domain.yml) for install and configure a WebLogic server 12c.
 Oracle Fusion Middleware software for hosting Oracle Fusion Middleware applications in Redhat Linux 7 (RHEL/CentOS/Oracle Linux) system.
